@@ -30,7 +30,7 @@ public void setup()
 }
 public void draw()
 {
-	stroke(randomColor());
+	stroke(255,255,0);
 	while( endX < 300){
 		endX = startX + (int)(Math.random()*10);
 		endY= startY+(int)(Math.random()*20)-10;
@@ -45,10 +45,6 @@ public void mousePressed()
 	startY=150;
 	endX=0;
 	endY=150;
-}
-public void randomColor(){
-	return colors((int)(Math.random()*256),
-		(int)(Math.random()*256),(int)(Math.random()*256));
 }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "Lightning" };
